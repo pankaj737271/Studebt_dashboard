@@ -1,0 +1,81 @@
+
+ .main-container {
+  padding: 2rem;
+  background-color: #f0f0f0;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.img-login-container {
+  background-image: url('https://www.isaca.org/-/media/images/isacadp/project/isaca/journal/2021/volume-2/j21v2-the-gentle-art-of-password.png?mw=250&hash=B11D776FD0927CC3F838B3FF6A7C8AD1');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius:20px
+}
+.login-container {
+  display: flex;
+  width: 500px;
+  height: 500px;
+  border-radius:20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 2rem; */
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  /* margin-bottom: 2rem; */
+}
+
+.img-fluid {
+  max-width: fit-content;
+  height: auto;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+input.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input.form-control:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  /* margin-top: 0.25rem; */
+}
+
+button.btn {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button.btn:hover {
+  background-color: #0056b3;
+}

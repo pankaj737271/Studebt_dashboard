@@ -1,0 +1,82 @@
+@keyframes slideInOut {
+    0% {
+        right: 0; /* Starting off the screen */
+        opacity: 0;
+    }
+    10% {
+        right: 12px; /* Slide in */
+        opacity: 1;
+    }
+    90% {
+        right: 12px; /* Stay in place */
+        opacity: 1;
+    }
+    100% {
+        right: 0; /* Slide out */
+        opacity: 0;
+    }
+}
+
+.errorLog {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    animation: slideInOut 3s ease-in-out forwards;
+}
+
+
+  .access-denied-container {
+    text-align: center;
+    color: #333;
+    margin-top: 200px;
+  }
+  
+  .cross-mark {
+    width: 100px;
+    height: 100px;
+    background-color: #ff4d4d;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto 20px;
+    animation: rotateCross 2s infinite linear;
+  }
+  
+  .cross-mark::before,
+  .cross-mark::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 10%;
+    background-color: #fff;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transform-origin: center;
+  }
+  
+  .cross-mark::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin: 0.5em 0;
+  }
+  
+  p {
+    margin: 0.5em 0;
+  }
+  
+  .error-code {
+    color: #888;
+  }
+  
+  @keyframes rotateCross {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
