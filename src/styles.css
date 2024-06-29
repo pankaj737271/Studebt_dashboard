@@ -33,3 +33,17 @@ html, body {
     line-height: 1.6;
   }
   
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+   
+  ::-webkit-scrollbar-track {
+    background: black;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: red;
+    border: 3px solid blue;
+  }
